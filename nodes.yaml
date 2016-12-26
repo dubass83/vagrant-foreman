@@ -1,0 +1,19 @@
+---
+theforeman.example.com:
+  ip: 192.168.35.5
+  ports: []
+  memory: 4096
+  box: gbarbieru/xenial
+  bootstrap: bootstrap-foreman.sh
+agent01.example.com:
+  ip: 192.168.35.10
+  ports: []
+  memory: 1024
+  box: centos/7
+  bootstrap: bootstrap-node-rhel.sh
+agent02.example.com:
+  ip: 192.168.35.20
+  ports: []
+  memory: 1024
+  box: ubuntu/xenial64
+  bootstrap: bootstrap-node-ubuntu.sh
